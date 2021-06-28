@@ -1,0 +1,2 @@
+rootProject.name = "AMS Tuck Shop App"
+include ':app'
