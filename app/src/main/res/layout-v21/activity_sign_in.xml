@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -59,7 +58,7 @@
             android:autofillHints="@string/school_email"
             android:background="@drawable/entry_box"
             android:hint="@string/school_email"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:inputType="textEmailAddress"
             android:textColorHint="#9fff" />
 
@@ -73,16 +72,20 @@
             android:background="@drawable/entry_box"
             android:baselineAligned="false"
             android:hint="@string/password"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:inputType="textPassword"
             android:textColorHint="#9fff" />
+
+        <CheckBox
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/remember_me"/>
 
         <!--Sign in Button (takes to HomePage)-->
         <Button
             android:id="@+id/sign_in_btn"
             android:layout_width="226dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="13dp"
             android:backgroundTint="@drawable/btn_colour"
             android:text="@string/sign_in_button"
             android:textColor="#000" />
