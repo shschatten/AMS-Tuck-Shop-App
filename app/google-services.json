@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "720338198133",
+    "project_id": "ams-tuck-shop",
+    "storage_bucket": "ams-tuck-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720338198133:android:6f4bb6686cfd3a731e623c",
+        "android_client_info": {
+          "package_name": "com.example.amstuckshopapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720338198133-0k6ffaqjsvj0vv53rh4ar95dh7969i35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpLdQqReNAYRcuHcxAyUWpXhDrx4S_HNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720338198133-0k6ffaqjsvj0vv53rh4ar95dh7969i35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

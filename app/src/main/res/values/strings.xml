@@ -1,10 +1,13 @@
 <resources>
     <string name="app_name">AMS Tuck Shop App</string>
-    <string name="sign_in">Sign In</string>
+    <string name="google_sign_in">Sign In with Google</string>
     <string name="ams_tuck_shop">AMS Tuck Shop</string>
-    <string name="school_email">School email</string>
-    <string name="password">Password</string>
     <string name="sign_in_button">Sign In</string>
     <string name="remember_me">Remember me</string>
+    <string name="logout">LOGOUT</string>
+    <string name="welcome">WELCOME</string>
+    <string name="email">Email</string>
+    <string name="name">name</string>
+    <string name="txtCredits"><a href = "https://www.al-madinah.school.nz/canteen/"/>Al-Madinah School</string>
 
 </resources>

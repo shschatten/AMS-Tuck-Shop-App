@@ -45,12 +45,12 @@
             android:layout_height="50dp"
             android:layout_marginTop="80dp"
             android:fontFamily="sans-serif-thin"
-            android:text="@string/sign_in"
+            android:text="@string/google_sign_in"
             android:textColor="#000"
             android:textSize="22sp"
             android:textStyle="bold" />
 
-        <!--Input School Email-->
+        <!--Input School Email
         <EditText
             android:id="@+id/school_email"
             android:layout_width="260dp"
@@ -62,8 +62,8 @@
             android:inputType="textEmailAddress"
             android:textColorHint="#9fff" />
 
-        <!--Input Password-->
-        <EditText
+
+        <-EditText
             android:id="@+id/password"
             android:layout_width="260dp"
             android:layout_height="40dp"
@@ -79,7 +79,9 @@
         <CheckBox
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="@string/remember_me"/>
+            android:text="@string/remember_me"
+            android:id="@+id/remember_me"
+            android:buttonTint="@color/black"/>-->
 
         <!--Sign in Button (takes to HomePage)-->
         <Button
@@ -89,6 +91,7 @@
             android:backgroundTint="@drawable/btn_colour"
             android:text="@string/sign_in_button"
             android:textColor="#000" />
+
 
     </LinearLayout>
 
