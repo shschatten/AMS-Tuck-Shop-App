@@ -3,4 +3,13 @@
     <color name="blue">#0000FF</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Dashboard Colours -->
+    <!-- Body -->
+    <color name="home_background">#f2f5f8</color>
+    <color name="nav_background">#E1F7EF</color>
+
+    <!-- Navigation Colours-->
+    <color name="text_colour">#37CB95</color>
+    <color name="animate_colour">#9937CB95</color>
 </resources>

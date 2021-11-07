@@ -9,5 +9,6 @@
     <string name="email">Email</string>
     <string name="name">name</string>
     <string name="txtCredits"><a href = "https://www.al-madinah.school.nz/canteen/"/>Al-Madinah School</string>
+    <string name="tuck_shop">Tuck Shop</string>
 
 </resources>

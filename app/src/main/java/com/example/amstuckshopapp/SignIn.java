@@ -54,13 +54,12 @@ public class SignIn extends AppCompatActivity{
 
         mAuth = FirebaseAuth.getInstance();
 
-        Button signIn = findViewById(R.id.sign_in_btn);
 
         //Request Google
         createRequest();
 
         //Get Google Sign In Button
-        findViewById(R.id.sign_in_btn).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id. sign_in_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 signIn();
@@ -120,8 +119,11 @@ public class SignIn extends AppCompatActivity{
 
                         }
                     }
+
+
                 });
     }
+
 
 
 }
