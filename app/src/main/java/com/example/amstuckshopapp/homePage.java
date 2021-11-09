@@ -1,10 +1,14 @@
 package com.example.amstuckshopapp;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.ClipData;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -13,6 +17,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -25,9 +30,11 @@ public class homePage extends AppCompatActivity implements NavigationView.OnNavi
     static final float END_SCALE = 0.7f;
     LinearLayout contentView;
     ImageView menu_icon;
+
     //Drawer View
     DrawerLayout drawerLayout;
     NavigationView navigationView;
+    Context context = this;
 
 
     @Override
@@ -38,6 +45,7 @@ public class homePage extends AppCompatActivity implements NavigationView.OnNavi
         Button logout = findViewById(R.id.logout_button);
         TextView name = findViewById(R.id.name);
         TextView mail = findViewById(R.id.mail);
+
 
         //Hooks
         menu_icon = findViewById(R.id.menu_icon);
@@ -56,15 +64,6 @@ public class homePage extends AppCompatActivity implements NavigationView.OnNavi
             name.setText(signInAccount.getDisplayName());
             mail.setText(signInAccount.getEmail());
         }
-
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FirebaseAuth.getInstance().signOut();
-                Intent intent = new Intent(getApplicationContext(), SignIn.class);
-                startActivity(intent);
-            }
-        });
 
 
     }
@@ -89,6 +88,8 @@ public class homePage extends AppCompatActivity implements NavigationView.OnNavi
 
     }
 
+
+    //Navigation Drawer Animation
     private void animateNavigationDrawer() {
 
         drawerLayout.setScrimColor(getResources().getColor(R.color.animate_colour));
@@ -126,6 +127,8 @@ public class homePage extends AppCompatActivity implements NavigationView.OnNavi
         });
     }
 
+
+    //Draws back from Navigation Drawer
     @Override
     public void onBackPressed() {
 
@@ -134,10 +137,83 @@ public class homePage extends AppCompatActivity implements NavigationView.OnNavi
         }else
             super.onBackPressed();
     }
+
+
+    //Navigation Drawer Handling Menu Click Events
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch(item.getItemId())
+        {
+            case R.id.nav_home:
+                showToast("HOME");
+                openActivity(homePage.class);
+                onBackPressed();
+                break;
+
+            case R.id.nav_cart:
+                showToast("CART");
+                openActivity(Cart.class);
+                onBackPressed();
+                break;
+
+            case R.id.nav_order:
+                showToast("ORDER HISTORY");
+                openActivity(OrderHistory.class);
+                onBackPressed();
+                break;
+
+            case R.id.nav_profile:
+                showToast("PROFILE");
+                openActivity(Profile.class);
+                onBackPressed();
+                break;
+
+            case R.id.nav_help:
+                showToast("HELP");
+                openActivity(Help.class);
+                onBackPressed();
+                break;
+
+            case R.id.nav_logout:
+                onBackPressed2();
+                break;
+
+            default:
+                return false;
+        }
         return true;
     }
 
+    //Message Box for Logout.
+    private void onBackPressed2() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Are you sure you want to log out?").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(getApplicationContext(), SignIn.class);
+                startActivity(intent);
+
+            }
+        })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+
+    }
+
+    private void showToast(String home) {
+        Toast.makeText(context, home, Toast.LENGTH_SHORT).show();
+    }
+
+    private void openActivity(Class homePage) {
+        startActivity(new Intent(context, homePage));
+    }
 
 }

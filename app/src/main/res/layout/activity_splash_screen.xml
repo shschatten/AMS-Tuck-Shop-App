@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_colour"
+    tools:context=".SplashScreen">
+
+    <!-- App Name on Splash Screen-->
+
+
+    <!-- Animation -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="437dp"
+        android:text="@string/welcome_splash"
+        android:textColor="@color/splash_text"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/amstuckshop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="387dp"
+        android:text="@string/ams_tuck_shop"
+        android:textColor="@color/splash_text"
+        android:textSize="20sp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="450dp"
+        android:layout_height="250dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/foodanime" />
+
+</RelativeLayout>

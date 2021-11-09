@@ -4,6 +4,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <!-- Splash Screen -->
+    <color name="splash_colour">#AFEAD5</color>
+    <color name="splash_text">#0B291E</color>
+
     <!-- Dashboard Colours -->
     <!-- Body -->
     <color name="home_background">#f2f5f8</color>

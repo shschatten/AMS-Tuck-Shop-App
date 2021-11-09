@@ -3,10 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Ubaydullah/AndroidStudioProjects/AMSTuckShopApp/app/src/main/res/layout/activity_cart.xml" value="0.2653985507246377" />
+        <entry key="..\:/Users/Ubaydullah/AndroidStudioProjects/AMSTuckShopApp/app/src/main/res/layout/activity_help.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Ubaydullah/AndroidStudioProjects/AMSTuckShopApp/app/src/main/res/layout/activity_logout.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Ubaydullah/AndroidStudioProjects/AMSTuckShopApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Ubaydullah/AndroidStudioProjects/AMSTuckShopApp/app/src/main/res/layout/activity_order_history.xml" value="0.2653985507246377" />
+        <entry key="..\:/Users/Ubaydullah/AndroidStudioProjects/AMSTuckShopApp/app/src/main/res/layout/activity_profile.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Ubaydullah/AndroidStudioProjects/AMSTuckShopApp/app/src/main/res/layout/activity_sign_in.xml" value="0.1" />
+        <entry key="..\:/Users/Ubaydullah/AndroidStudioProjects/AMSTuckShopApp/app/src/main/res/layout/activity_splash_screen.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/Ubaydullah/AndroidStudioProjects/AMSTuckShopApp/app/src/main/res/layout/main_menu.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Ubaydullah/AndroidStudioProjects/AMSTuckShopApp/app/src/main/res/layout/menu_header.xml" value="0.26902173913043476" />
         <entry key="..\:/Users/Ubaydullah/AndroidStudioProjects/AMSTuckShopApp/app/src/main/res/menu/main_menu.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Ubaydullah/AndroidStudioProjects/AMSTuckShopApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.215625" />
+        <entry key="..\:/Users/Ubaydullah/AndroidStudioProjects/AMSTuckShopApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.215625" />
       </map>
     </option>
   </component>
