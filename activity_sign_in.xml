@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_image"
+    tools:context=".SignIn">
+
+    <!--Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9fff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <!--Logo-->
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="133dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="-90dp"
+            android:width="10dp"
+            android:height="10dp"
+            android:background="@drawable/logo"
+            android:gravity="center" />
+
+        <!--AMS Tuck Shop Heading-->
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="38dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center"
+            android:text="@string/ams_tuck_shop"
+            android:textColor="#000"
+            android:textSize="35sp" />
+
+        <!--Sign In Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sign_in_btn"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="@string/google_sign_in"
+            android:textAllCaps="false"
+            app:backgroundTint="#000"
+            app:icon="@drawable/google_btn"
+            app:iconPadding="0dp"
+            app:iconSize="46dp"
+            app:iconTintMode="src_atop" />
+
+        <TextView
+            android:id="@+id/infoTxtCredits"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:autoLink="web"
+            android:gravity=""
+            android:linksClickable="true"
+            android:text="@string/txtCredits" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
